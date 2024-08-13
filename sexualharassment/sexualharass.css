@@ -1,0 +1,153 @@
+.image-container {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.image-container img {
+    display: block;
+    width: 100%; 
+    height: auto; 
+}
+
+.image-container .overlay-text {
+    position: absolute;
+    top: 50%; 
+    left: 10px;
+    transform: translateY(-50%); 
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: white; 
+    padding: 10px; 
+    font-size: 50px; 
+    white-space: nowrap;
+}
+.center-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 20px 0; 
+}
+
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+div.item {
+  position: relative;
+  float: left;
+  overflow: hidden;
+  margin: 10px 1%;
+  min-width: 220px;
+  max-width: 310px;
+  width: 100%;
+  background: #000000;
+  text-align: center;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+}
+
+div.item * {
+  box-sizing: border-box;
+  transition: all 0.35s ease-in-out;
+}
+
+div.item i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  font-size: 34px;
+  color: #000000;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  background: #ffffff;
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 300ms 0ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+div.item a {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+}
+
+div.item.blue i {
+  color: #34495e;
+}
+
+div.item.blue {
+  background-color: #34495e;
+}
+
+div.item.red {
+  background-color: #e74c3c;
+}
+
+div.item.red i {
+  color: #e74c3c;
+}
+
+div.item.green i {
+  color: #16a085;
+}
+
+div.item.green {
+  background-color: #16a085;
+}
+
+div.item img {
+  max-width: 100%;
+  vertical-align: top;
+  height: 210px;
+}
+
+div.item:hover img {
+  opacity: 0.3;
+  filter: grayscale(100%);
+}
+
+div.item * {
+  transition: all 0.35s ease-in-out;
+}
+
+div.item:hover i {
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 300ms 100ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+  
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+/*
+
+.centered-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    flex-direction: column;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 900px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: left;
+}
+
+p, ul, ol {
+    margin: 10px 0;
+    text-align: left; 
+}*/

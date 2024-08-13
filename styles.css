@@ -1,0 +1,76 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(image/homepage.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    overflow: hidden;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.homepage {
+    margin-top: 50px;
+    text-align: left; /* Align text to the left */
+    margin-left: 50px;
+}
+
+.homepage h1 {
+    color: white;
+    font-size: 60px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.homepage p {
+    color: white;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.homepagePara p {
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    margin-right: 700px;
+}
+
+.homepage h5 {
+    color: white;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.homepageButton {
+    background-color: #5DCA9C;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 25px;
+    border: none;
+    border-radius: 30px;
+    width: 20%;
+    padding: 15px; /* Combine padding properties */
+    cursor: pointer;
+}
+
+.homepageButton:hover{
+    background-color: #FFFFFF;
+    color: #5DCA9C;
+}
+
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

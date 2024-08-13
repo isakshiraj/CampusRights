@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FeedBack</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="feedbackpage.css">
+</head>
+<body>
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #FFFFFF;">
+        <a class="navbar-brand">CampusRights</a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="menu.html">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="aboutus.html">About Us</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="feedback.html">Feedback</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contactus.html">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="faqs.html">FAQs</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    <div class="contact-right">
+        <form name="submit-to-google-sheet">
+            <h4>Your Name</h4><p><input type="text" name="Name" placeholder="Your Name" required></p>
+            <h4>Your Email</h4><p><input type="email" name="Email" placeholder="Your email" required></p>
+            <h4>Feedback</h4><p><textarea name="Message" rows="6" placeholder="Feedback"></textarea></p>
+            <button type="submit" class="btn btn2">Submit</button>
+        </form>
+        <span id="msg"></span>
+    </div>
+</div>
+</div>
+
+<!------------------------form setup for taking response-------------------------------cont scriptURL: link of excel after deploying------------->  
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzkeJ4XLJecSd8-vyqHQwPB_y05UvF5GBeNVy4jnbnfFFbbxXhEaRkrbxMCmKmUv4iPFw/exec'    
+    const form = document.forms['submit-to-google-sheet']
+   
+    const msg = document.getElementById("msg")
+
+   
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Feedback sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+    
+
+
+
+
+      <!-- Footer -->
+      <footer class="footer mt-auto py-3" style="background-color: #ffffff;">
+        <div class="containers text-center" style="margin-bottom: -5px; margin-top: -5px;">
+            <span class="text-muted">© 2024 CampusRights</span>
+        </div>
+    </footer>
+
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

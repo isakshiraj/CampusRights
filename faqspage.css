@@ -1,0 +1,82 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e3edf7;
+    overflow-y: auto; /* Ensure the page is scrollable */
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+/* Make sure the footer does not overlap content */
+.footer {
+    position: relative; /* Change from fixed to relative */
+    bottom: 0;
+    width: 100%;
+    margin-top: 20px; /* Add some margin at the top to avoid overlap */
+}
+
+/**********************************************FAQ's*************************************************************************/
+
+.center-text {
+    text-align: center;
+}
+
+.accordion {
+    margin: 60px auto;
+    width: 600px;
+}
+
+.accordion li {
+    list-style: none;
+    width: 100%;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 8px;
+    background: #e3edf7;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+                -6px -6px 10px -1px grey;
+}
+
+.accordion li label {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+label::before {
+    content: '+';
+    margin-right: 10px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.accordion .content {
+    color: black;
+    padding: 0 10px;
+    line-height: 26px;
+    max-height: 0;
+    overflow: hidden; /* This is fine, but we need to manage the height */
+    transition: max-height 0.5s, padding 0.5s;
+}
+
+.accordion input[type="radio"]:checked + label + .content {
+    max-height: 400px;
+    padding: 10px 10px 20px;
+}
+
+.accordion input[type="radio"]:checked + label::before {
+    content: '-';
+}

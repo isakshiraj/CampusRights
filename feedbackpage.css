@@ -1,0 +1,96 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+    background-image: url(image/menupage.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+}
+
+.navbar-brand {
+    font-weight: bold;
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Ensures the navbar stays on top of other elements */
+}
+
+/* Feedback form styles */
+.contact-right {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Light shadow for depth */
+}
+
+.contact-right h4 {
+    color: #ffffff; /* Dark gray color for section headers */
+    margin-bottom: 10px; /* Space between headers and input fields */
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.contact-right p {
+    margin: 10px 0; /* Space between input fields */
+}
+
+.contact-right textarea {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #afe7d0; 
+    border-radius: 10px;
+    resize: vertical; /* Allow vertical resizing of textarea */
+    background-color: #afe7d0;
+    color: #565454;
+}
+
+.contact-right input {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #afe7d0;
+    border-radius: 10px;
+    resize: vertical; /* Allow vertical resizing of textarea */
+    background-color: #afe7d0;
+    color: #565454;
+}
+
+.btn2 {
+    background-color: #ae7ec4; /* Greenish color for submit button */
+    color: #ffffff; /* White text color for button */
+    border: none;
+    padding: 5px 15px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 20px;
+    font-weight: 600;
+}
+
+.btn2:hover {
+    background-color: #ffffff; /* Darker greenish color on hover */
+    color: #ae7ec4;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
+
+/*********agter submitting  will print*************/
+#msg {
+    color: #ffffff;
+    margin-top: 10px;
+    display: block;
+}
+
+.footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

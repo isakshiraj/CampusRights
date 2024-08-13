@@ -1,0 +1,49 @@
+/* Custom styles for menupage.css */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(image/homepage.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    overflow: hidden;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.container {
+    margin-top: -15px;
+}
+
+.container .btn{
+    width: 30%;
+    align-items: center;
+    background-color: #AE7EC4;
+    border-color: #ffffff;
+    box-shadow: 0 8px 10px rgba(34, 34, 34, 0.7);
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.container .btn:hover{
+    background-color: #ffffff;
+    color: #AE7EC4;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+

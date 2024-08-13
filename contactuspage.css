@@ -1,0 +1,67 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+    background-image: url(image/menupage.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+
+/* Contact information styling */
+.contact-left {
+    max-width: 500px;
+    margin: 130px auto;
+    padding: 20px;
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #9deccb;
+}
+
+
+.contact-left p {
+    font-size: 30px;
+    color: #5f5e5e;
+    margin-bottom: 40px;
+    font-weight: 600;
+}
+
+.contact-left p:hover{
+    color: #ffffff;
+}
+
+
+
+/* Social icons styling */
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    color: #5f5e5e;
+    font-size: 40px;
+    margin-right: 25px;
+    transition: color 0.3s ease;
+    font-weight: 600;
+}
+
+.social-icons a:hover {
+    color: #ffffff; /* Bootstrap primary color */
+}
+
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

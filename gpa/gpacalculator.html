@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPA Calculator</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/gpa/gpacalpage.css">
+</head>
+<body>
+     <!-- Navbar -->
+     <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #FFFFFF;">
+        <a class="navbar-brand" >CareerCompass</a>
+        <div class="collapse navbar-collapse" id="navbarNav" style="padding-bottom: -20px;">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../menu.html">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../aboutus.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../feedback.html">Feedback</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../contactus.html">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="calculator">
+        <span id="creditError" class="error"></span>
+        <span id="inputError" class="error"></span>
+        <br>
+        <h2>GPA Calculator</h2>
+        <form id="cgpaForm">
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" required>
+
+            <label for="grade">Grade:</label>
+            <select id="grade">
+                <option value="A+">A+</option>
+                <option value="A">A</option>
+                <option value="B+">B+</option>
+                <option value="B">B</option>
+                <option value="C+">C+</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+                <option value="F">F</option>
+            </select>
+
+            <label for="credit">Credit:</label>
+            <input type="number" id="credit" min="1" required>
+
+            <button type="button" onclick="addSubject()">
+                Add / Edit Subject
+            </button>
+        </form>
+        <br>
+        <br>
+        <h3>Calculate SGPA</h3>
+        <table id="subjectTable">
+            <thead>
+                <tr>
+                    <th>Subject</th>
+                    <th>Grade</th>
+                    <th>Credit</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="subjectList"></tbody>
+        </table>
+        <br>
+        <h3>SGPA: <span id="sgpa">0.00</span></h3>
+
+        <button type="button" onclick="calculateSGPA()">
+            Calculate SGPA
+        </button>
+        <button type="button" onclick="resetForm()">
+            Reset
+        </button>
+        <br>
+        <br>
+        <br>
+        <h3>CGPA: <span id="cgpa">0.00</span></h3>
+
+        <button type="button" onclick="calculateCGPA()">
+            Calculate CGPA
+        </button>
+
+        <button type="button" onclick="addSemester()">
+            Add Semester
+        </button>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container text-center">
+            <span class="text-muted">© 2024 CareerCompass</span>
+        </div>
+    </footer>
+
+    <script src="/gpa/gpacalculator.js"></script>
+
+   <!-- Bootstrap JS and dependencies -->
+   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+   <script src="gpacalscript.js"></script>
+</body>
+</html>

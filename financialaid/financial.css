@@ -1,0 +1,24 @@
+body {
+    font-family: Arial, sans-serif;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    table-layout: fixed;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    word-wrap: break-word;
+}
+th {
+    background-color: #f2f2f2;
+    text-align: left;
+}
+h2 {
+    margin-top: 40px;
+}
+.table-section {
+    margin-bottom: 20px;
+}
