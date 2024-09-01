@@ -26,3 +26,12 @@ h2 {
 .container:last-of-type {
     margin-bottom: 50px; /* Space between last FAQ item and footer */
 }
+
+.dropdown-menu .dropdown-item {
+    padding: 10px 20px;
+    color: #3b3434;
+}
+.dropdown-menu .dropdown-item:hover {
+    background-color: #ccc;
+    color: rgb(31, 31, 31);
+}

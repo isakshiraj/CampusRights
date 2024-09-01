@@ -69,3 +69,13 @@ body {
 .faq-question.active .close-btn {
     display: inline;
 }
+
+
+.dropdown-menu .dropdown-item {
+    padding: 10px 20px;
+    color: #3b3434;
+}
+.dropdown-menu .dropdown-item:hover {
+    background-color: #ccc;
+    color: rgb(31, 31, 31);
+}
