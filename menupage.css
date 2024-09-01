@@ -47,3 +47,14 @@ body {
     width: 100%;
 }
 
+
+/* Ensure the button keeps its color when clicked (focus/active states) */
+.btn-primary:active,
+.btn-primary:focus,
+.btn-primary:visited {
+    background-color:   #ffffff !important;
+    border-color:  #AE7EC4 !important;
+    color: #AE7EC4 !important;                      box-shadow: none !important;
+    outline: none !important; 
+}
+
