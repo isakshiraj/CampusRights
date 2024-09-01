@@ -21,3 +21,7 @@
     transform: scale(1.05); 
     box-shadow: 0 8px 16px rgba(168, 47, 116, 0.2); 
 }
+
+.card-container:last-of-type {
+    margin-bottom: 50px; /* Space between last FAQ item and footer */
+}

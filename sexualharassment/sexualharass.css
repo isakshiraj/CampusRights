@@ -151,3 +151,7 @@ p, ul, ol {
     margin: 10px 0;
     text-align: left; 
 }*/
+
+.container:last-of-type {
+  margin-bottom: 50px; /* Space between last FAQ item and footer */
+}

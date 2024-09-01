@@ -22,3 +22,7 @@ h2 {
 .table-section {
     margin-bottom: 20px;
 }
+
+.container:last-of-type {
+    margin-bottom: 50px; /* Space between last FAQ item and footer */
+}

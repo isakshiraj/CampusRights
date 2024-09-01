@@ -15,10 +15,9 @@ body{
 
 .navbar-brand {
     font-weight: bold;
-    position: -webkit-sticky; /* For Safari */
     position: sticky;
     top: 0;
-    z-index: 1000; /* Ensures the navbar stays on top of other elements */
+    z-index: 1000;
 }
 
 /* Feedback form styles */
@@ -28,6 +27,7 @@ body{
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Light shadow for depth */
+    background-color: rgba(63, 196, 147, 0.8);
 }
 
 .contact-right h4 {

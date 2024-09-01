@@ -5,78 +5,67 @@ html, body {
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #e3edf7;
-    overflow-y: auto; /* Ensure the page is scrollable */
+    background-color: #6dd3a9;
+    min-height: 100vh; /* Ensures footer is pushed to the bottom when content is short */
+    display: flex;
+    flex-direction: column;
 }
 
 .navbar-brand {
     font-weight: bold;
 }
 
-/* Make sure the footer does not overlap content */
+/* Footer styles */
 .footer {
-    position: relative; /* Change from fixed to relative */
-    bottom: 0;
-    width: 100%;
-    margin-top: 20px; /* Add some margin at the top to avoid overlap */
-}
-
-/**********************************************FAQ's*************************************************************************/
-
-.center-text {
+    background-color: #333; /* Change as needed */
+    color: #fff; /* Change as needed */
     text-align: center;
-}
-
-.accordion {
-    margin: 60px auto;
-    width: 600px;
-}
-
-.accordion li {
-    list-style: none;
+    padding: 10px 0;
     width: 100%;
-    margin: 20px;
-    padding: 10px;
-    border-radius: 8px;
-    background: #e3edf7;
-    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
-                -6px -6px 10px -1px grey;
+    margin-top: auto; /* Pushes footer to the bottom */
 }
 
-.accordion li label {
-    display: flex;
-    align-items: center;
+/* FAQ Styles */
+.faq-item {
+    margin: 10px auto;
+    max-width: 800px; /* Adjust based on your design */
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    /* Add bottom margin to create space between last FAQ and footer */
+}
+
+.faq-item:last-of-type {
+    margin-bottom: 50px; /* Space between last FAQ item and footer */
+}
+
+.faq-question {
+    background-color: #f1f1f1;
     padding: 10px;
-    font-size: 18px;
-    font-weight: 500;
     cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+    border-radius: 5px 5px 0 0;
 }
 
-label::before {
-    content: '+';
-    margin-right: 10px;
-    font-size: 24px;
-    font-weight: 600;
+.faq-question:hover {
+    background-color: #e1e1e1;
 }
 
-input[type="radio"] {
+.faq-answer {
+    display: none;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    border-radius: 0 0 5px 5px;
+}
+
+.close-btn {
+    font-size: 22px;
+    cursor: pointer;
     display: none;
 }
 
-.accordion .content {
-    color: black;
-    padding: 0 10px;
-    line-height: 26px;
-    max-height: 0;
-    overflow: hidden; /* This is fine, but we need to manage the height */
-    transition: max-height 0.5s, padding 0.5s;
-}
-
-.accordion input[type="radio"]:checked + label + .content {
-    max-height: 400px;
-    padding: 10px 10px 20px;
-}
-
-.accordion input[type="radio"]:checked + label::before {
-    content: '-';
+.faq-question.active .close-btn {
+    display: inline;
 }

@@ -58,7 +58,7 @@ body {
     font-size: 25px;
     border: none;
     border-radius: 30px;
-    width: 20%;
+    width: 15%;
     padding: 15px; /* Combine padding properties */
     cursor: pointer;
 }
