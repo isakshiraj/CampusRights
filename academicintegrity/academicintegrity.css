@@ -1,9 +1,29 @@
+
 .card-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
     padding: 20px;
+    background-color: #5DCA9C;
+}
+
+.heading1{
+    background-color: #5DCA9C;
+}
+
+.heading{
+   text-align: center;
+}
+
+.mainpara{
+    margin-left:50px;
+    margin-right: 50px;
+    font-size: 18px;
+}
+
+.first{
+    margin-left: 40px;
 }
 
 .card {
@@ -14,7 +34,7 @@
     max-width: 900px;
     width: 100%;
     padding: 20px;
-    text-align: left;
+    text-align: left
 }
 
 .card:hover {
