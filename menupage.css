@@ -24,12 +24,13 @@ body {
 .container .btn{
     width: 30%;
     align-items: center;
-    background-color: #AE7EC4;
+    background-color: #5DCA9C;
     border-color: #ffffff;
     box-shadow: 0 8px 10px rgba(34, 34, 34, 0.7);
     border-radius: 30px;
     font-size: 18px;
     font-weight: 400;
+    font-weight: bold;
 }
 
 .container .btn:hover{
