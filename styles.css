@@ -6,7 +6,7 @@ html, body {
 
 body {
     font-family: Arial, sans-serif;
-    background-image: url(image/homepage.png);
+    background-color: #2b4c65 !important;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
