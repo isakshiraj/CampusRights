@@ -15,7 +15,7 @@ html, body {
 
 body {
     font-family: Arial, sans-serif;
-    background-image: url(/image/menupage.png);
+    background-color: #2b4c65;
     background-size: cover;
     background-position: center center;
 }
@@ -47,7 +47,7 @@ body {
 button {
     margin-top: 15px;
     padding: 12px 20px;
-    background-color: #4caf50;
+    background-color: #95B4CC;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -57,7 +57,7 @@ button {
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color: #6B8BA4;
 }
 
 li {
@@ -83,7 +83,7 @@ h2, h3 {
 #sgpa, #cgpa {
     font-size: 24px;
     font-weight: bold;
-    color: #4caf50;
+    color: darkblue;
 }
 
 #subjectList {
