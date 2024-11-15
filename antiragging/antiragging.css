@@ -6,6 +6,20 @@
     padding: 20px;
 }
 
+body{
+    background-color:  #2b4c65 !important;
+}
+
+.heading1{
+    margin-top: 30px;
+}
+
+.para1{
+    color: white;
+    text-align: center;
+    font-size: 25px;
+}
+
 .card {
     background-color: #fff;
     border: 1px solid #ccc;
@@ -27,13 +41,13 @@
 }
 
 .image-container img {
-    max-width: 100%; 
-    height: auto; 
+    width:1550px; 
+    height: 200px; 
 }
 
 
 .image-container2 img {
-    max-width: 400px; 
+    width: 1350px;
     height: auto; 
 }
 
