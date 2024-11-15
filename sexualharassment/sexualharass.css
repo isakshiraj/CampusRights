@@ -10,6 +10,21 @@
     height: auto; 
 }
 
+.heading2{
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  margin-top: 40px;
+}
+
+body{
+  background-color: #2b4c65 !important;
+}
+
+.container{
+  background-color: white;
+  border-radius: 30px;
+}
 .image-container .overlay-text {
     position: absolute;
     top: 50%; 
