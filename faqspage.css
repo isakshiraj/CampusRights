@@ -5,7 +5,7 @@ html, body {
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #6dd3a9;
+    background-color: #2b4c65;
     min-height: 100vh; /* Ensures footer is pushed to the bottom when content is short */
     display: flex;
     flex-direction: column;
@@ -25,6 +25,14 @@ body {
     margin-top: auto; /* Pushes footer to the bottom */
 }
 
+.faq-container {
+    display: block;            /* Keeps the FAQ items in a vertical layout */
+    width: 50%;                /* Takes up the right half of the page */
+    margin-left: auto;         /* Pushes the container to the right */
+    margin-right: 0;           /* Ensure no margin on the right */
+    margin-top: 100px;
+}
+
 /* FAQ Styles */
 .faq-item {
     margin: 10px auto;
@@ -33,6 +41,22 @@ body {
     border: 1px solid #ddd;
     border-radius: 5px;
     /* Add bottom margin to create space between last FAQ and footer */
+}
+
+.faqq{
+    text-align: left;
+    color: white;
+    font-size: 50px;
+    font-weight: 700;
+    margin-top: 450px;
+    margin-left: 100px;
+}
+
+.fapp{
+    margin-left: 100px;
+    color: white;
+    font-weight: 500;
+    font-size: 30px;
 }
 
 .faq-item:last-of-type {

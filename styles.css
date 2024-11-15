@@ -7,10 +7,24 @@ html, body {
 body {
     font-family: Arial, sans-serif;
     background-color: #2b4c65 !important;
+    background-image: url('image/skyscrapers-sky-clouds-glass-wallpaper.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     overflow: hidden;
+    color: white; /* Ensure text color is white */
+    position: relative; /* Needed for overlay */
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    z-index: -1; /* Push overlay behind content */
 }
 
 .navbar-brand {
@@ -54,7 +68,7 @@ body {
 }
 
 .homepageButton {
-    background-color: #5DCA9C;
+    background-color:#5DCA9C;
     color: #FFFFFF;
     font-weight: 700;
     font-size: 25px;
