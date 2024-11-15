@@ -25,10 +25,10 @@ body{
 
 /* Feedback form styles */
 .contact-right {
-    max-width: 700px;
-    height: 600px;
-    margin-top: 150px;
-    margin-left: 700px;
+    max-width: 500px;
+    height: 500px;
+    margin-top: 63px;
+    margin-left: 500px;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Light shadow for depth */
@@ -37,13 +37,13 @@ body{
 
 .contact-right h4 {
     color: black; /* Dark gray color for section headers */
-    margin-bottom: 20px; /* Space between headers and input fields */
+    margin-bottom: 10px; /* Space between headers and input fields */
     font-size: 25px;
     font-weight: 600;
 }
 
 .contact-right p {
-    margin: 20px 0; /* Space between input fields */
+    margin: 15px 0; /* Space between input fields */
 }
 
 .contact-right textarea {
