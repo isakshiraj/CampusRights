@@ -5,11 +5,11 @@
     align-items: center;
     gap: 20px;
     padding: 20px;
-    background-color: #5DCA9C;
+    background-color:#2b4c65 ;
 }
 
 .heading1{
-    background-color: #5DCA9C;
+    background-color: #2b4c65;
 }
 
 .heading{
@@ -17,9 +17,10 @@
 }
 
 .mainpara{
-    margin-left:50px;
-    margin-right: 50px;
+    margin-left:120px;
+    margin-right: 120px;
     font-size: 18px;
+    text-align: center;
 }
 
 .first{
