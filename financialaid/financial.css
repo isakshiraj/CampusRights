@@ -1,6 +1,8 @@
 body {
     font-family: Arial, sans-serif;
+    background-color: #2b4c65 !important;
 }
+
 table {
     width: 100%;
     border-collapse: collapse;
@@ -11,6 +13,10 @@ th, td {
     border: 1px solid #ddd;
     padding: 8px;
     word-wrap: break-word;
+}
+
+td{
+    color: white;
 }
 th {
     background-color: #f2f2f2;
