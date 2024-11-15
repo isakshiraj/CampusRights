@@ -4,6 +4,7 @@
     align-items: center;
     gap: 20px;
     padding: 20px;
+    border-radius: 30px;
 }
 
 body{
@@ -23,12 +24,13 @@ body{
 .card {
     background-color: #fff;
     border: 1px solid #ccc;
-    border-radius: 8px;
+    border-radius: 30px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     max-width: 900px;
     width: 100%;
     padding: 20px;
     text-align: left;
+
 }
 
 .card:hover {

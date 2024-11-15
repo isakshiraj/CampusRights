@@ -24,7 +24,11 @@ body{
 .container{
   background-color: white;
   border-radius: 30px;
+  width:950px !important;
+  padding-left: 30px;
+
 }
+
 .image-container .overlay-text {
     position: absolute;
     top: 50%; 
