@@ -1,3 +1,8 @@
+.navbar-brand {
+    font-weight: bold;
+}
+
+
 .container:last-of-type {
     margin-bottom: 50px; /* Space between last FAQ item and footer */
 }

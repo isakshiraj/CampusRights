@@ -10,6 +10,9 @@
 body{
     background-color:  #2b4c65 !important;
 }
+.navbar-brand {
+    font-weight: bold;
+}
 
 .heading1{
     margin-top: 30px;
