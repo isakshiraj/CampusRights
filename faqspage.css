@@ -30,7 +30,7 @@ body {
     width: 100%;                /* Takes up the right half of the page */
     margin-left: auto;         /* Pushes the container to the right */
     margin-right: 0;           /* Ensure no margin on the right */
-    margin-top: 10px;
+    margin-top: -20px;
 }
 
 /* FAQ Styles */
@@ -49,6 +49,7 @@ body {
     font-size: 40px;
     font-weight: 600;
     margin-top: 40px;
+    text-decoration: underline;
 }
 
 .fapp{

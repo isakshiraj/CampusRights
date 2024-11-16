@@ -42,7 +42,7 @@ body::before {
     font-size: 60px;
     font-weight: 600;
     margin-bottom: 5px;
-    margin-top: -25px;
+    margin-top: -55px;
 }
 
 .homepage p {
@@ -68,7 +68,7 @@ body::before {
 }
 
 .homepageButton {
-    background-color:#5DCA9C;
+    background-color:  #38698f;
     color: #FFFFFF;
     font-weight: 700;
     font-size: 25px;
@@ -81,12 +81,23 @@ body::before {
 
 .homepageButton:hover{
     background-color: #FFFFFF;
-    color: #5DCA9C;
+    color: #2b4c65;
+    border: 4px solid #38698f;
 }
 
+
+/* Ensure the button keeps its color when clicked (focus/active states) */
+.homepageButton:active,
+.homepageButton:focus,
+.homepageButton:visited {
+    background-color:#ffffff !important;
+    border-color: none !important;                     box-shadow: none !important;
+    outline: none !important; 
+}
 
 .footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+    height: 40px;
 }
