@@ -1,15 +1,20 @@
 .card-container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
+    flex-direction: row;  /* ✅ Change to row to allow side-by-side layout */
+    align-items: flex-start;  /* aligns top of both columns */
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;  /* Optional: makes it responsive on smaller screens */
     padding: 20px;
     border-radius: 30px;
 }
 
-body{
-    background-color:  #2b4c65 !important;
+body {
+  margin: 0;
+  padding-bottom: 80px; /* Give space so footer doesn't overlap content */
+  background-color: #2b4c65 !important;
 }
+
 .navbar-brand {
     font-weight: bold;
 }
