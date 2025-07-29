@@ -23,8 +23,8 @@ body{
 .contact-right {
     max-width: 700px;
     height: 78vh;
-    margin-top: 20px;
-    margin-left: 300px;
+    margin-top: 40px;
+    margin-left: 450px;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Light shadow for depth */
