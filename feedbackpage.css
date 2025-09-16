@@ -3,13 +3,12 @@ html, body {
     margin: 0;
 }
 
-body{
+body {
     font-family: Arial, sans-serif;
     background-color: #2b4c65;
     display: flex;
     flex-direction: column;
-    overflow: hidden;
-
+    overflow: auto; /* Changed to allow scrolling on smaller screens */
 }
 
 .navbar-brand {
@@ -22,49 +21,67 @@ body{
 /* Feedback form styles */
 .contact-right {
     max-width: 700px;
+<<<<<<< HEAD
+<<<<<<< HEAD
     height: 78vh;
     margin-top: 40px;
     margin-left: 450px;
+=======
+    width: 90%;
+    height: auto; /* Changed from fixed height to auto for responsiveness */
+    min-height: 60vh;
+    margin: 20px auto;
+>>>>>>> a950b74 (adjustScreenSize)
+=======
+    width: 90%;
+    height: auto; /* Changed from fixed height to auto for responsiveness */
+    min-height: 60vh;
+    margin: 20px auto;
+=======
+    height: 78vh;
+    margin-top: 40px;
+    margin-left: 450px;
+>>>>>>> 7465542e876def1cbb8943932a027bd624db03fe
+>>>>>>> c379394bc800b57fc4334ef26f55911018f38611
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Light shadow for depth */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
     background-color: white;
 }
 
 .contact-right h4 {
-    color: black; /* Dark gray color for section headers */
-    margin-bottom: -10px; /* Space between headers and input fields */
+    color: black;
+    margin-bottom: -10px;
     font-size: 22px;
     font-weight: 600;
 }
 
 .contact-right p {
-    margin: 15px 0; /* Space between input fields */
+    margin: 15px 0;
 }
 
 .contact-right textarea {
     width: 100%;
-    padding: 5px;
-    border: 1px solid #95B4CC; 
+    padding: 10px;
+    border: 1px solid #95B4CC;
     border-radius: 10px;
-    resize: vertical; /* Allow vertical resizing of textarea */
+    resize: vertical;
     background-color: #95B4CC;
     color: black;
 }
 
 .contact-right input {
     width: 100%;
-    padding: 5px;
+    padding: 10px;
     border: 1px solid #95B4CC;
     border-radius: 10px;
-    resize: vertical; /* Allow vertical resizing of textarea */
     background-color: #95B4CC;
     color: black;
 }
 
 .btn2 {
-    background-color: #6b8ba4; /* Greenish color for submit button */
-    color: #ffffff; /* White text color for button */
+    background-color: #6b8ba4;
+    color: #ffffff;
     border: 1px solid #6b8ba4;
     padding: 10px 20px;
     font-size: 18px;
@@ -75,24 +92,22 @@ body{
 }
 
 .btn2:hover {
-    background-color: #ffffff; /* Darker greenish color on hover */
+    background-color: #ffffff;
     color: #6b8ba4;
     font-size: 20px;
     font-weight: 700;
     border: 1px solid #6b8ba4;
 }
 
-/* Ensure the button keeps its color when clicked (focus/active states) */
 .btn2:active,
 .btn2:focus,
 .btn2:visited {
-    background-color:   #ffffff !important;                     box-shadow: none !important;
-    outline: none !important; 
+    background-color: #ffffff !important;
+    box-shadow: none !important;
+    outline: none !important;
 }
 
-
-
-/*********agter submitting  will print*************/
+/* Message display after submission */
 #msg {
     color: #2b4c65;
     margin-top: 15px;
@@ -100,6 +115,7 @@ body{
     font-size: 18px;
 }
 
+/* Footer styling */
 .footer {
     position: relative;
     bottom: 0;
@@ -108,6 +124,7 @@ body{
     height: 40px;
 }
 
+/* Dropdown styling */
 .dropdown-menu .dropdown-item {
     padding: 10px 20px;
     color: #3b3434;
@@ -115,4 +132,49 @@ body{
 .dropdown-menu .dropdown-item:hover {
     background-color: #ccc;
     color: rgb(31, 31, 31);
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .contact-right {
+        width: 80%;
+        min-height: 50vh;
+    }
+
+    .contact-right h4 {
+        font-size: 20px;
+    }
+
+    .contact-right input,
+    .contact-right textarea {
+        font-size: 16px;
+    }
+
+    .btn2 {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 600px) {
+    .contact-right {
+        width: 95%;
+        padding: 15px;
+        min-height: 50vh;
+    }
+
+    .contact-right h4 {
+        font-size: 18px;
+    }
+
+    .contact-right input,
+    .contact-right textarea {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .btn2 {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
 }
