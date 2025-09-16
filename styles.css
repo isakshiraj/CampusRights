@@ -32,10 +32,17 @@ body::before {
 
 .homepage {
 <<<<<<< HEAD
+<<<<<<< HEAD
     margin-top: 125px;
 =======
     margin-top: 70px;
 >>>>>>> a950b74 (adjustScreenSize)
+=======
+    margin-top: 70px;
+=======
+    margin-top: 125px;
+>>>>>>> 7465542e876def1cbb8943932a027bd624db03fe
+>>>>>>> c379394bc800b57fc4334ef26f55911018f38611
     text-align: left; /* Align text to the left */
     margin-left: 80px;
 }
