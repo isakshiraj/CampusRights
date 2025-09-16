@@ -45,3 +45,12 @@ h2 {
     background-color: #ccc;
     color: rgb(31, 31, 31);
 }
+
+
+
+@media (max-width: 600px) {
+    .table-section h2 {
+        font-size: 18px;
+    }
+}
+

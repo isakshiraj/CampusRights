@@ -3,7 +3,6 @@ html, body {
     margin: 0;
 }
 
-
 body {
     font-family: Arial, sans-serif;
     background-color: #2b4c65 !important;
@@ -23,7 +22,7 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    background: rgba(0, 0, 0, 0.65); /* Semi-transparent black overlay */
     z-index: -1; /* Push overlay behind content */
 }
 
@@ -32,7 +31,7 @@ body::before {
 }
 
 .homepage {
-    margin-top: 50px;
+    margin-top: 70px;
     text-align: left; /* Align text to the left */
     margin-left: 50px;
 }
@@ -57,7 +56,7 @@ body::before {
     color: white;
     font-size: 19px;
     font-weight: 500;
-    margin-right: 700px;
+    margin-right: 50px;
 }
 
 .homepage h5 {
@@ -85,7 +84,6 @@ body::before {
     border: 4px solid #2b4c65;
 }
 
-
 /* Ensure the button keeps its color when clicked (focus/active states) */
 .homepageButton:active,
 .homepageButton:focus,
@@ -101,4 +99,36 @@ body::before {
     bottom: 0;
     width: 100%;
     height: 40px;
+}
+
+/* Small screen adjustments */
+@media (max-width: 600px) {
+    .homepage {
+        margin-left: 20px;
+        margin-top: 50px;
+    }
+
+    .homepage h1 {
+        font-size: 35px;
+        margin-top: -20px;
+    }
+
+    .homepage p {
+        font-size: 18px;
+    }
+
+    .homepagePara p {
+        font-size: 14px;
+        margin-right: 20px;
+    }
+
+    .homepage h5 {
+        font-size: 20px;
+    }
+
+    .homepageButton {
+        width: 50%;
+        font-size: 18px;
+        padding: 10px;
+    }
 }

@@ -3,40 +3,16 @@ html, body {
     margin: 0;
 }
 
-body{
+body {
     font-family: Arial, sans-serif;
-    overflow: hidden;
+    overflow: auto; /* Allow scrolling instead of hiding content */
     background-color: #2b4c65;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-
 }
 
-.heading{
-    text-align: center;
-    font-weight: bold;
-}
-
-.whoarewe{
-    font-size: 45px;
-    color: white;
-    text-align: center;
-    margin-top: 60px;
-    font-weight: bold;
-    text-decoration: underline;
-}
-
-.aboutus{
-    font-size: 22px;
-    color: white;
-    margin-left: 210px;
-    margin-right: 210px;
-    text-align: center;
-    margin-top: -20px;
-}
-
-
+/* Navbar */
 .navbar-brand {
     font-weight: bold;
 }
@@ -45,15 +21,64 @@ body{
     padding: 10px 20px;
     color: #3b3434;
 }
+
 .dropdown-menu .dropdown-item:hover {
     background-color: #ccc;
     color: rgb(31, 31, 31);
 }
 
+/* About Us heading */
+.whoarewe {
+    font-size: 45px;
+    color: white;
+    text-align: center;
+    margin-top: 60px;
+    font-weight: bold;
+    text-decoration: underline;
+}
 
+/* About Us paragraph */
+.aboutus {
+    font-size: 22px;
+    color: white;
+    margin-left: 210px;
+    margin-right: 210px;
+    text-align: center;
+    margin-top: -20px;
+}
+
+/* Footer */
 .footer {
     position: fixed;
     bottom: 0;
     width: 100%;
     height: 40px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .whoarewe {
+        font-size: 35px;
+        margin-top: 40px;
+    }
+
+    .aboutus {
+        font-size: 18px;
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .whoarewe {
+        font-size: 28px;
+        margin-top: 30px;
+    }
+
+    .aboutus {
+        font-size: 16px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
 }

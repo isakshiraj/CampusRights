@@ -1,7 +1,31 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #2b4c65;
+    color: white;
+}
+
 .navbar-brand {
     font-weight: bold;
 }
 
+.heading1 {
+    background-color: #2b4c65;
+    padding: 20px 0;
+}
+
+.heading {
+    text-align: center;
+    font-size: 28px;
+}
+
+.mainpara {
+    margin: 0 auto;
+    max-width: 900px;
+    padding: 0 20px;
+    font-size: 18px;
+    text-align: center;
+}
 
 .card-container {
     display: flex;
@@ -9,27 +33,7 @@
     align-items: center;
     gap: 20px;
     padding: 20px;
-    background-color:#2b4c65 ;
-    border-radius: 30px;
-}
-
-.heading1{
     background-color: #2b4c65;
-}
-
-.heading{
-   text-align: center;
-}
-
-.mainpara{
-    margin-left:120px;
-    margin-right: 120px;
-    font-size: 18px;
-    text-align: center;
-}
-
-.first{
-    margin-left: 40px;
 }
 
 .card {
@@ -37,27 +41,89 @@
     border: 1px solid #ccc;
     border-radius: 30px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 900px;
     width: 100%;
+    max-width: 900px;
     padding: 20px;
-    text-align: left
+    text-align: left;
+    color: #333;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card:hover {
-    transform: scale(1.05); 
-    box-shadow: 0 8px 16px rgba(168, 47, 116, 0.2); 
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(168, 47, 116, 0.2);
 }
 
-.card-container:last-of-type {
-    margin-bottom: 50px; /* Space between last FAQ item and footer */
+.first {
+    margin-left: 20px;
 }
 
+/* Footer */
+.footer {
+    background-color: #FFFFFF !important;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.containers {
+    margin-bottom: -5px;
+    margin-top: -7px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+/* Dropdown menu */
 .dropdown-menu .dropdown-item {
     padding: 10px 20px;
     color: #3b3434;
 }
+
 .dropdown-menu .dropdown-item:hover {
     background-color: #ccc;
-    color: rgb(31, 31, 31);
+    color: #1f1f1f;
 }
 
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    .mainpara {
+        margin: 0 30px;
+    }
+}
+
+@media (max-width: 992px) {
+    .heading {
+        font-size: 24px;
+    }
+    .mainpara {
+        font-size: 16px;
+    }
+    .card {
+        max-width: 700px;
+    }
+}
+
+@media (max-width: 768px) {
+    .heading {
+        font-size: 22px;
+    }
+    .mainpara {
+        font-size: 15px;
+    }
+    .card {
+        max-width: 90%;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .heading {
+        font-size: 20px;
+    }
+    .mainpara {
+        font-size: 14px;
+    }
+    .card {
+        max-width: 95%;
+        padding: 10px;
+    }
+}
