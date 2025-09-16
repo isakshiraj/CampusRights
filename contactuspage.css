@@ -3,21 +3,21 @@ html, body {
     margin: 0;
 }
 
-body{
+body {
     font-family: Arial, sans-serif;
-    overflow: hidden;
+    overflow: auto; /* Allow scrolling instead of hiding content */
     background-color: #2b4c65;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-
 }
 
+/* Navbar */
 .navbar-brand {
     font-weight: bold;
 }
 
-
+/* Contact heading */
 .contactusheading {
     text-align: center;
     color: white;
@@ -27,8 +27,7 @@ body{
     text-decoration: underline;
 }
 
-
-/* Contact information styling */
+/* Contact container */
 .contact-left {
     width: 900px;
     margin: 130px auto;
@@ -39,50 +38,36 @@ body{
     border-radius: 25px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     background-color: white;
+<<<<<<< HEAD
     margin-left: 330px;
+=======
+    margin-left: auto;
+>>>>>>> a950b74 (adjustScreenSize)
     margin-top: 60px;
     height: 50vh;
 }
 
-
-
-
+/* Contact text */
 .contact-left p {
     font-size: 25px;
     color: black;
     margin-bottom: 40px;
 }
 
-.contact-left p i:hover{
-    color:  black;
+.contact-left p i:hover {
+    color: black;
 }
-.contact-left p a{
+
+.contact-left p a {
     color: black;
     text-decoration: none;
 }
 
-.contact-left p a:hover{
+.contact-left p a:hover {
     color: rgb(11, 116, 215);
 }
 
-/* Social icons styling */
-/* .social-icons {
-    margin-top: 20px;
-}
-
-.social-icons a {
-    color: #5f5e5e;
-    font-size: 40px;
-    margin-right: 25px;
-    transition: color 0.3s ease;
-    font-weight: 600;
-}
-
-.social-icons a:hover {
-    color: #ffffff;
-} */
-
-
+/* Footer */
 .footer {
     position: fixed;
     bottom: 0;
@@ -90,11 +75,57 @@ body{
     height: 40px;
 }
 
+/* Dropdown styling */
 .dropdown-menu .dropdown-item {
     padding: 10px 20px;
     color: #3b3434;
 }
+
 .dropdown-menu .dropdown-item:hover {
     background-color: #ccc;
     color: rgb(31, 31, 31);
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .contact-left {
+        width: 80%;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 30px;
+        padding-bottom: 20px;
+        height: auto;
+        margin: 80px auto;
+    }
+
+    .contactusheading {
+        font-size: 40px;
+        margin-top: 20px;
+    }
+
+    .contact-left p {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .contact-left {
+        width: 95%;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 20px;
+        padding-bottom: 15px;
+        margin-top: 40px;
+    }
+
+    .contactusheading {
+        font-size: 28px;
+        margin-top: 15px;
+    }
+
+    .contact-left p {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
 }
