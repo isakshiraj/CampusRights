@@ -32,9 +32,9 @@ body::before {
 }
 
 .homepage {
-    margin-top: 125px;
+    margin-top: 50px;
     text-align: left; /* Align text to the left */
-    margin-left: 80px;
+    margin-left: 50px;
 }
 
 .homepage h1 {
