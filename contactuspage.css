@@ -38,7 +38,11 @@ body {
     border-radius: 25px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     background-color: white;
+<<<<<<< HEAD
     margin-left: auto;
+=======
+    margin-left: 330px;
+>>>>>>> 7465542e876def1cbb8943932a027bd624db03fe
     margin-top: 60px;
     height: 50vh;
 }

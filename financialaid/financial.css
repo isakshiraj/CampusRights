@@ -3,6 +3,16 @@ body {
     background-color: #2b4c65 !important;
 }
 
+a {
+  color: #00BFFF; 
+  text-decoration: none; 
+}
+
+a:hover {
+  color: #87CEFA; 
+  text-decoration: underline; 
+}
+
 .navbar-brand {
     font-weight: bold;
 }
@@ -15,7 +25,7 @@ table {
 }
 th, td {
     border: 1px solid #ddd;
-    padding: 8px;
+    padding: 6px;
     word-wrap: break-word;
 }
 

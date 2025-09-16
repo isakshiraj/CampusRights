@@ -31,9 +31,13 @@ body::before {
 }
 
 .homepage {
+<<<<<<< HEAD
     margin-top: 70px;
+=======
+    margin-top: 125px;
+>>>>>>> 7465542e876def1cbb8943932a027bd624db03fe
     text-align: left; /* Align text to the left */
-    margin-left: 50px;
+    margin-left: 80px;
 }
 
 .homepage h1 {

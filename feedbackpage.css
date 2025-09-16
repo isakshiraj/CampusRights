@@ -21,10 +21,16 @@ body {
 /* Feedback form styles */
 .contact-right {
     max-width: 700px;
+<<<<<<< HEAD
     width: 90%;
     height: auto; /* Changed from fixed height to auto for responsiveness */
     min-height: 60vh;
     margin: 20px auto;
+=======
+    height: 78vh;
+    margin-top: 40px;
+    margin-left: 450px;
+>>>>>>> 7465542e876def1cbb8943932a027bd624db03fe
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
