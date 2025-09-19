@@ -7,7 +7,7 @@ html, body {
 body {
     font-family: Arial, sans-serif;
     /*background-color: #2b4c65;*/
-    background-image: url(image/imagemenuSmall.png);
+    background-image: url(image/imagemenu.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -76,6 +76,10 @@ body {
 
 /* Mobiles */
 @media (max-width: 576px) {
+    body{
+        background-color:  #2b4c65 !important;
+        background-image: none !important;
+    }
     .container .btn {
         width: 80%;
         font-size: 14px;
