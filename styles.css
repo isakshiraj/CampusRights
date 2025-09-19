@@ -10,6 +10,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
+    overflow: auto; /* Changed to allow scrolling on smaller screens */
     color: white; /* Ensure text color is white */
     position: relative; /* Needed for overlay */
 }
