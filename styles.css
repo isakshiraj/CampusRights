@@ -10,7 +10,6 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    overflow: hidden;
     color: white; /* Ensure text color is white */
     position: relative; /* Needed for overlay */
 }
@@ -22,7 +21,7 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.65); /* Semi-transparent black overlay */
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent black overlay */
     z-index: -1; /* Push overlay behind content */
 }
 
@@ -133,16 +132,3 @@ body::before {
     }
 }
 
-@media (max-width: 600px) {
-    .navbar-collapse {
-        display: block !important;
-    }
-
-    .navbar-nav {
-        flex-direction: column;
-    }
-
-    .nav-item {
-        margin: 5px 0;
-    }
-}
