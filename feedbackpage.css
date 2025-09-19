@@ -26,13 +26,13 @@ body {
     min-height: 60vh;
     margin: 20px auto;
     padding: 20px;
-    border-radius: 8px;
+    /*border-radius: 8px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    background-color: white;
+    background-color: white;*/
 }
 
 .contact-right h4 {
-    color: black;
+    color: #ffffff;
     margin-bottom: -10px;
     font-size: 22px;
     font-weight: 600;
@@ -61,6 +61,21 @@ body {
     color: black;
 }
 
+.contact-right textarea:active,
+.contact-right textarea:focus,
+.contact-right textarea:visited {
+    background-color: #95B4CC !important;
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+.contact-right input:active,
+.contact-right input:focus,
+.contact-right input:visited {
+    background-color: #95B4CC !important;
+    box-shadow: none !important;
+    outline: none !important;
+}
 .btn2 {
     background-color: #6b8ba4;
     color: #ffffff;
@@ -91,7 +106,7 @@ body {
 
 /* Message display after submission */
 #msg {
-    color: #2b4c65;
+    color: #ffffff;
     margin-top: 15px;
     display: block;
     font-size: 18px;
