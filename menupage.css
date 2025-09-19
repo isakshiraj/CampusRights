@@ -7,11 +7,11 @@ html, body {
 body {
     font-family: Arial, sans-serif;
     /*background-color: #2b4c65;*/
-    background-image: url(image/imagemenu.png);
+    background-image: url(image/imagemenuSmall.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    overflow: hidden;
+    overflow: auto;
 }
 
 .navbar-brand {
@@ -64,3 +64,27 @@ body {
     outline: none !important; 
 }
 
+
+
+/* Tablets */
+@media (max-width: 992px) {
+    .container .btn {
+        width: 50%;
+        font-size: 16px;
+    }
+}
+
+/* Mobiles */
+@media (max-width: 576px) {
+    .container .btn {
+        width: 80%;
+        font-size: 14px;
+        margin: 0 auto;          
+        margin-bottom: 15px; /* spacing between buttons */
+    }
+
+    .navbar-nav {
+        text-align: center; /* center menu items */
+    }
+
+}
