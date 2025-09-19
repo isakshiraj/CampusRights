@@ -1,75 +1,131 @@
-.card-container {
-    display: flex;
-    flex-direction: row;  /* ✅ Change to row to allow side-by-side layout */
-    align-items: flex-start;  /* aligns top of both columns */
-    justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;  /* Optional: makes it responsive on smaller screens */
-    padding: 20px;
-    border-radius: 30px;
-}
-
+/* General */
 body {
-  margin: 0;
-  padding-bottom: 80px; /* Give space so footer doesn't overlap content */
   background-color: #2b4c65 !important;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 .navbar-brand {
-    font-weight: bold;
+  font-weight: bold;
 }
 
-.heading1{
-    margin-top: 30px;
+.heading1 {
+  margin-top: 30px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
 }
 
-.para1{
-    color: white;
-    text-align: center;
-    font-size: 25px;
+.para1 {
+  color: white;
+  text-align: center;
+  font-size: 25px;
+  margin: 20px;
+}
+
+/* Cards */
+.card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  padding: 20px;
 }
 
 .card {
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 30px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 900px;
-    width: 100%;
-    padding: 20px;
-    text-align: left;
-
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 1000px;
+  width: 100%;
+  padding: 20px;
+  text-align: left;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .card:hover {
-    transform: scale(1.05); 
-    box-shadow: 0 8px 16px rgba(168, 47, 116, 0.2); 
+  transform: scale(1.02);
+  box-shadow: 0 8px 16px rgba(168, 47, 116, 0.2);
 }
 
-.image-container {
-    text-align: center; 
+/* Flex cards (text left, image right) */
+.flex-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-.image-container img {
-    width:1550px; 
-    height: 200px; 
+.flex-card .card-text {
+  flex: 1 1 55%;
+  padding-right: 20px;
 }
 
-
-.image-container2 img {
-    width: 1350px;
-    height: auto; 
+.flex-card img {
+  flex: 1 1 40%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 15px;
+  margin: 10px auto;
 }
 
-.image-container:last-of-type {
-    margin-bottom: 50px; /* Space between last FAQ item and footer */
+/* Footer */
+.footer {
+  background: #ffffff;
+  color: #333;
+  text-align: center;
+  padding: 15px;
 }
 
+/* Dropdown menu */
 .dropdown-menu .dropdown-item {
-    padding: 10px 20px;
-    color: #3b3434;
+  padding: 10px 20px;
+  color: #3b3434;
 }
 .dropdown-menu .dropdown-item:hover {
-    background-color: #ccc;
-    color: rgb(31, 31, 31);
+  background-color: #ccc;
+  color: rgb(31, 31, 31);
 }
+
+/* Responsive */
+@media (max-width: 768px) {
+  .para1 {
+    font-size: 20px;
+  }
+
+  .flex-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .flex-card .card-text {
+    padding-right: 0;
+    margin-bottom: 15px;
+  }
+
+  .flex-card img {
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 576px) {
+  .heading1 {
+    font-size: 28px;
+  }
+
+  .para1 {
+    font-size: 18px;
+  }
+
+  .card {
+    padding: 15px;
+  }
+
+  .flex-card img {
+    max-width: 100%;
+  }
+}
+
+

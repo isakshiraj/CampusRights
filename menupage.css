@@ -36,10 +36,6 @@ body {
     color: #2b4c65;
 }
 
-#options{
-    margin-top: 150px !important; 
-}
-
 .container .btn:hover{
     background-color: #ffffff;
     color: #2b4c65;

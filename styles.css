@@ -31,22 +31,7 @@ body::before {
 }
 
 .homepage {
-<<<<<<< HEAD
-    margin-top: 50px;
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-    margin-top: 125px;
-=======
     margin-top: 70px;
->>>>>>> a950b74 (adjustScreenSize)
-=======
-    margin-top: 70px;
-=======
-    margin-top: 125px;
->>>>>>> 7465542e876def1cbb8943932a027bd624db03fe
->>>>>>> c379394bc800b57fc4334ef26f55911018f38611
->>>>>>> 4f89227a2d9638b49851eb85f6ab0424a1059348
     text-align: left; /* Align text to the left */
     margin-left: 50px;
 }
@@ -145,5 +130,19 @@ body::before {
         width: 50%;
         font-size: 18px;
         padding: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    .navbar-collapse {
+        display: block !important;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+    }
+
+    .nav-item {
+        margin: 5px 0;
     }
 }

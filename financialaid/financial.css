@@ -3,16 +3,6 @@ body {
     background-color: #2b4c65 !important;
 }
 
-a {
-  color: #00BFFF; 
-  text-decoration: none; 
-}
-
-a:hover {
-  color: #87CEFA; 
-  text-decoration: underline; 
-}
-
 .navbar-brand {
     font-weight: bold;
 }
@@ -25,7 +15,7 @@ table {
 }
 th, td {
     border: 1px solid #ddd;
-    padding: 6px;
+    padding: 8px;
     word-wrap: break-word;
 }
 
@@ -56,11 +46,16 @@ h2 {
     color: rgb(31, 31, 31);
 }
 
-
+.table-section h2 {
+    color: white;
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
 
 @media (max-width: 600px) {
     .table-section h2 {
         font-size: 18px;
     }
 }
-
