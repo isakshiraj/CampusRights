@@ -14,10 +14,12 @@ CampusRights aims to empower students by providing them with accessible informat
 
 ## Features
 
-- **Sexual Harassment:** Information on what constitutes sexual harassment, how to report it, and available support resources.
-- **Academic Integrity:** Guidelines on plagiarism, cheating, and other forms of academic misconduct.
-- **Privacy Rights:** 
-- **Financial Aid:** Information on student loans, grants, and financial responsibilities, including how to appeal financial aid decisions.
+- **Sexual Harassment:** Information on what constitutes sexual harassment, how to report it, and available support resources.  
+- **Academic Integrity:** Guidelines on plagiarism, cheating, and other forms of academic misconduct.  
+- **Privacy Rights:** Explains students’ rights related to data protection, personal information, and digital privacy within campus systems.  
+- **Financial Aid:** Information on student loans, grants, and financial responsibilities, including how to appeal financial aid decisions.  
+- **Anti-Ragging:** Provides details on laws, reporting mechanisms, and support systems to combat ragging and bullying on campus.  
+- **GPA Calculator:** An interactive tool that allows students to calculate and encourage for better academic planning.  
 
 ## Technologies Used
 
@@ -25,7 +27,6 @@ CampusRights aims to empower students by providing them with accessible informat
 - **CSS**
 - **Bootstrap**
 - **JavaScript**
-- **React**
 
 ## Contact Information
 
