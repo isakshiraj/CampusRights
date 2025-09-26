@@ -1,127 +1,135 @@
 html, body {
-    height: 100%;
-    margin: 0;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    overflow: auto; /* Allow scrolling instead of hiding content */
-    background-color: #2b4c65;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #2b4c65;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  overflow: auto;
 }
 
 /* Navbar */
 .navbar-brand {
-    font-weight: bold;
+  font-weight: bold;
 }
 
-/* Contact heading */
+/* Heading */
 .contactusheading {
-    text-align: center;
-    color: white;
-    font-size: 50px;
-    font-weight: 600;
-    margin-top: 40px;
-    text-decoration: underline;
+  text-align: center;
+  color: white;
+  font-size: 50px;
+  font-weight: 600;
+  margin-top: 40px;
+  text-decoration: underline;
 }
 
-/* Contact container */
-.contact-left {
-    width: 900px;
-    margin: 130px auto;
-    padding-left: 45px;
-    padding-right: 20px;
-    padding-bottom: 20px;
-    padding-top: 50px;
-    border-radius: 25px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    background-color: white;
-    margin-left: auto;
-    margin-top: 60px;
-    height: 50vh;
+/* Contact section */
+.contact-us {
+  max-width: 900px;
+  margin: 60px auto;
+  background: white;
+  border-radius: 25px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.15);
+  padding: 40px;
 }
 
-/* Contact text */
-.contact-left p {
-    font-size: 25px;
-    color: black;
-    margin-bottom: 40px;
+
+.contact-us p {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 25px;
 }
 
-.contact-left p i:hover {
-    color: black;
+.contact-options h3 {
+  font-size: 25px;
+  margin-bottom: 20px;
 }
 
-.contact-left p a {
-    color: black;
-    text-decoration: none;
+.contact-options ul {
+  font-size: 18px;
+  list-style: none;
+  padding-left: 0;
 }
 
-.contact-left p a:hover {
-    color: rgb(11, 116, 215);
+.contact-options li {
+  margin-bottom: 25px;
+}
+
+.contact-options a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.contact-options a:hover {
+  text-decoration: underline;
+}
+
+.closing-note {
+  font-style: italic;
+  color: #444;
+  font-size: 18px;
+  margin-top: 20px;
 }
 
 /* Footer */
 .footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    height: 40px;
+  background-color: #fff;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
 }
 
-/* Dropdown styling */
 .dropdown-menu .dropdown-item {
-    padding: 10px 20px;
-    color: #3b3434;
+  padding: 10px 20px;
+  color: #3b3434;
 }
 
 .dropdown-menu .dropdown-item:hover {
-    background-color: #ccc;
-    color: rgb(31, 31, 31);
+  background-color: #ccc;
+  color: #1f1f1f;
 }
 
-/* Responsive adjustments */
+/* Responsive */
 @media (max-width: 992px) {
-    .contact-left {
-        width: 80%;
-        padding-left: 20px;
-        padding-right: 20px;
-        padding-top: 30px;
-        padding-bottom: 20px;
-        height: auto;
-        margin: 80px auto;
-    }
+  .contactusheading {
+    font-size: 40px;
+    margin-top: 20px;
+  }
 
-    .contactusheading {
-        font-size: 40px;
-        margin-top: 20px;
-    }
+  .contact-us {
+    width: 85%;
+    padding: 30px;
+  }
 
-    .contact-left p {
-        font-size: 20px;
-        margin-bottom: 20px;
-    }
+  .contact-us h2 {
+    font-size: 28px;
+  }
+
+  .contact-us p, 
+  .contact-options ul {
+    font-size: 16px;
+  }
 }
 
 @media (max-width: 600px) {
-    .contact-left {
-        width: 95%;
-        padding-left: 15px;
-        padding-right: 15px;
-        padding-top: 20px;
-        padding-bottom: 15px;
-        margin-top: 40px;
-    }
+  .contactusheading {
+    font-size: 28px;
+    margin-top: 15px;
+  }
 
-    .contactusheading {
-        font-size: 28px;
-        margin-top: 15px;
-    }
+  .contact-us {
+    width: 95%;
+    padding: 20px;
+  }
 
-    .contact-left p {
-        font-size: 16px;
-        margin-bottom: 15px;
-    }
+  .contact-us h2 {
+    font-size: 24px;
+  }
+
+  .contact-us p, 
+  .contact-options ul {
+    font-size: 15px;
+  }
 }
